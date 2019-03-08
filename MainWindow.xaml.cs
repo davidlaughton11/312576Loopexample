@@ -27,8 +27,10 @@ namespace _312576WhileExample
         public MainWindow()
         {
             InitializeComponent();
-            //Make sure to add a text file to your project
-            //set the build to copy
+             /*Make sure you add a text file to your project
+            * Set the Build Action property to Content
+            * and the Copy to Output Directory to Copy Always
+            */
             System.IO.StreamReader reader= new System.IO.StreamReader("myFile.txt");
             try {
                 String output = "";
